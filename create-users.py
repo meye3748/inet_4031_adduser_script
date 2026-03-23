@@ -23,11 +23,7 @@ def main():
         # Removes whitespace and newline characters and split the line into fields using ":" as the separator.
         fields = line.strip().split(':')
 
-        #REPLACE THESE COMMENTS with a single comment describing the logic of the IF
-        #what would an appropriate comment be for describing what this IF statement is checking for?
-        #what happens if the IF statement evaluates to true?
-        #how does this IF statement rely on what happened in the prior two lines of code? The match and fields lines.
-        #the code clearly shows that the variables match and the length of fields is being checked for being != 5  so why is it doing that?
+        # Skip any line that is a comment or does not contain exactly 5 required fields.
         if match or len(fields) != 5:
             continue
 
